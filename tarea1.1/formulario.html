@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+    
+</head>
+<body>
+    <form action="" class="formulario" id="formulario" onsubmit="return false;">
+         <div class="campos">
+            <div class="campo">
+                <label for="txtRut" class="Rut"> Rut</label>
+                <input type="text" id="inRut" class="cajainputRut" required maxlength="10">
+             </div>
+             <div class="campo">
+                <label for="txtNombre" class="Nombre">Nombre</label>
+                <input type="text" id="inNombre" class="cajainput" required maxlength="10">
+             </div>
+             <div class="campo">
+                <label for="txtComuna" class="Comuna">Comuna</label>
+                <input type="text" id="inComuna" class="cajainput" required maxlength="15">
+             </div>
+             <div class="divbtn">
+                <button class="btn" onclick="btnAgregar()">Agregar</button>
+             </div>
+         </div> 
+         <div class="tabla">
+             <table id="tabPersona" class="table table-striped">
+                 <thead>
+                     <tr>
+                    
+                        <th scope="col" width="200px">Rut</th>
+                        <th scope="col" width="200px">Nombre</th>
+                        <th scope="col" width="200px">Comuna</th>
+                     </tr>
+                 </thead>
+                 <tbody id="contenido">
+                 </tbody>
+             </table>
+         </div>  
+    </form>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" 
+    inte    grity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" 
+    crossorigin="anonymous"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
